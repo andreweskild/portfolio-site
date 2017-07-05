@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Andrew Eskild Christensen</title>
+    <link rel="stylesheet" type="text/css" href="styles.min.css" />
+    <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <script src="js/charming.js"></script>
+		<script src="js/anime.min.js"></script>
+  </head>
+  <body onload="initPage()">
+    <div class="page-content">
+
+
+
+      <div id="cover-section" class="cover-section">
+        <div class="cover-contact-wrapper center-contents">
+          <object id="contact-button" class="contact-button" type="image/svg+xml"
+          data="resources/contact-button.svg">
+          </object>
+          <div class="contact-dropdown center-contents">
+            <a class="dropdown-closer" onclick="hideContactDropdown()">x</a>
+            <div class="contact-info">
+              <a href="https://github.com/andychri">
+                <img src="resources/GitHub-Mark-32px.png">
+              </a> i
+              <a href="https://www.linkedin.com/in/andreweskildchristensen">
+                <img src="resources/In-Black-34px-TM.png">
+              </a>
+              <a href="mailto:andreweskild@gmail.com">i andreweskild@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="cover-content-wrapper center-contents">
+          <div class="cover-text">
+            <div class="cover-header-main center-contents">Andrew Eskild Christensen</div>
+            <div class="cover-subheader">Hello, I'm a Creative Developer.</div>
+          </div>
+        </div>
+        <svg class="scroll-arrow" width="100%" height="100%" viewBox="0 0 10 19" style="stroke-linecap:round;stroke-linejoin:round;">
+          <path class="scroll-arrow-line"
+            d="M5.08,17.948c-0.239,-2.878 -0.081,-5.191 -0.16,-8.182c-0.072,
+              -2.72 -0.394,-6.107 -0.32,-8.929"
+            style="fill:none;stroke:#565656;stroke-width:1px;"
+          />
+          <path class="scroll-arrow-point"
+            d="m 0.762,13.964 c 1.439,1.4 2.719,4.199 4.318,4.199 1.599,0 2.399,-2.799 4.158,-4.199"
+            style="fill:none;stroke:#565656;stroke-width:1px"
+          />
+        </svg>
+      </div>
+
+
+        <!-- About Me Section -->
+        <div id="about-section" class="section">
+          <div class="section-wrapper center-contents">
+              <div>
+                  <p class="section-content">
+                    I'm currently a student based in Eugene, Oregon. I love to develop
+                    for open-source software and design unique and interesting interfaces.
+                  </p>
+              </div>
+           </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div id="skills-section" class="section center-contents">
+          <div class="skills-section-content">
+            <div id="dev-skill" class="skill-wrapper">
+              <div class="skill-icon-container center-contents">
+                <img class="skill-icon" src="resources/dev-skill-icon.svg">
+              </div>
+              <div class="skill-text">
+                <div class="skill-header">CODING</div>
+                <div class="skill-description">
+                  I code primarily in C-based languages (C# and C++) with some
+                  Javascript on the side.
+                </div>
+              </div>
+            </div>
+            <div id="design-skill" class="skill-wrapper">
+              <div class="skill-icon-container center-contents">
+                <img class="skill-icon" src="resources/design-skill-icon.svg">
+              </div>
+              <div class="skill-text">
+                <div class="skill-header">DESIGNING</div>
+                <div class="skill-description">
+                  UX design is a big part of why I became a developer. I use Photoshop
+                  to design mockups and test new ideas.
+                </div>
+              </div>
+            </div>
+            <div id="etc-skill" class="skill-wrapper">
+              <div class="skill-icon-container center-contents">
+                <img class="skill-icon" src="resources/etc-skill-icon.svg">
+              </div>
+              <div class="skill-text">
+                <div class="skill-header">MISCELLANEOUS</div>
+                <div class="skill-description">
+                  I'm also experienced with Linux, Git, and
+                  database management.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="work-section" class="section work-section">
+          <div class="section-wrapper center-contents">
+            <object class="work-button" type="image/svg+xml"
+            data="resources/work-button.svg">
+            </object>
+          </div>
+        </div>
+
+
+        <div id="fin-section" class="section fin-section center-contents">
+          <p class="fin-header">Fin</p>
+        </div>
+
+    </div>
+
+    <div class="loading-page center-contents">
+      <div class="loading-text">
+        Loading...
+      </div>
+    </div>
+
+  </body>
+
+  <script src="js/main.js"></script>
+
+		<script>//<![CDATA[
+			function svgElementClicked()
+			{
+				console.log("fuck");
+			}
+				//]]>
+		</script>
+</html>
