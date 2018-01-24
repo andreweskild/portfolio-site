@@ -222,7 +222,6 @@ $mobile-width-limit: 540px;
 
 
     .cover-contact-wrapper {
-      position: absolute;
       height: auto;
       width: 100%;
     }
@@ -230,6 +229,8 @@ $mobile-width-limit: 540px;
     .cover-content-wrapper {
       height: 100%;
     }
+
+
 
     .contact-button {
       width: 224px;
@@ -240,6 +241,8 @@ $mobile-width-limit: 540px;
     .contact-dropdown {
       width: 50%;
       height: 100px;
+      min-width: 100px;
+      max-width: 600px;
       position: absolute;
       top: 64px;
       left: 25%;
@@ -271,6 +274,7 @@ $mobile-width-limit: 540px;
 
     .contact-info a {
       height: 100%;
+      @include responsive-font(4vw, 22px, 34px);
     }
 
     .contact-info img {
@@ -386,13 +390,29 @@ $mobile-width-limit: 540px;
   @include responsive-font(6vw, 24px, 36px);
 }
 
+.skill-subheader {
+  width: 100%;
+  margin-top: 5%;
+  text-align: center;
+  @include responsive-font(3vw, 18px, 24px);
+  color: rgb(0,0,0)
+}
+
+
 .skill-description {
   margin-top: 5%;
   width: 100%;
   text-align: center;
   @include responsive-font(3vw, 18px, 24px);
-  opacity: 0.7;
+  color: rgb(120,120,120)
 }
+
+.skill-list {
+  margin-top: 2.5%;
+  text-align: center;
+  opacity: 100%
+}
+
 
 // END SKILLS STYLES
 
@@ -413,10 +433,11 @@ $mobile-width-limit: 540px;
   #work-section {
     width: 100%;
     height: 100%;
-    min-height: 140px;
-    max-height: 200px;
+    min-height: 240px;
+    max-height: 300px;
     min-width: 100px;
     max-width: 600px;
+    overflow: hidden
   }
 
 
@@ -448,7 +469,7 @@ $mobile-width-limit: 540px;
   }
 
   .fin-section {
-    height: auto;
+    height: 100%;
     overflow: hidden;
   }
 
@@ -466,10 +487,16 @@ $mobile-width-limit: 540px;
   .contact-dropdown {
     width: 100%;
     left: 0;
-    top: 20px;
+    top: 10%;
   }
   .contact-info img {
-    height: 4px;
+    height: 14px;
+  }
+  
+
+  .dropdown-closer {
+    top: 20px;
+    right: 10px;
   }
 }
 
